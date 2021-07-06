@@ -23,9 +23,9 @@ export class DashboardComponent implements OnInit {
   
   constructor(private http:HttpService) { 
     this.config = {
-      itemsPerPage: 3,
+      itemsPerPage: 50,
       currentPage: 1,
-      totalItems: 7
+      totalItems: 2000 //must be length of array 
     };
     // this.http.getAllStudents().valueChanges().subscribe(res=>{
     //   console.log(res);
